@@ -77,3 +77,4 @@ describe('Settings update merge logic', () => {
     expect(updated.hideContent).toBe(false);
   });
 });
+

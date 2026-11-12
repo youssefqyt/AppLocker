@@ -64,3 +64,4 @@ Use the **Bug Report** issue template. Include:
 ## Code of Conduct
 
 Be kind and respectful. We follow the [Contributor Covenant](https://www.contributor-covenant.org/).
+

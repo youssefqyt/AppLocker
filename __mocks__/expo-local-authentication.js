@@ -5,3 +5,4 @@ module.exports = {
   authenticateAsync: jest.fn(() => Promise.resolve({ success: false })),
   AuthenticationType: { FINGERPRINT: 1, FACIAL_RECOGNITION: 2 },
 };
+

@@ -131,3 +131,4 @@ describe('DEFAULT_SETTINGS', () => {
     expect(DEFAULT_SETTINGS).toHaveProperty('theme');
   });
 });
+

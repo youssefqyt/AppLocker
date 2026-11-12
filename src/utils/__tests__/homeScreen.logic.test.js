@@ -67,3 +67,4 @@ describe('HomeScreen lock stats', () => {
     expect(unlockCount).toBe(2);
   });
 });
+
