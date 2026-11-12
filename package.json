@@ -1,0 +1,72 @@
+{
+  "name": "AppLocker",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --watchAll=false",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage --watchAll=false",
+    "test:ci": "jest --coverage --watchAll=false --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.[jt]sx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "expo-secure-store": "<rootDir>/__mocks__/expo-secure-store.js",
+      "expo-haptics": "<rootDir>/__mocks__/expo-haptics.js",
+      "expo-local-authentication": "<rootDir>/__mocks__/expo-local-authentication.js",
+      "@expo/vector-icons": "<rootDir>/__mocks__/@expo/vector-icons.js",
+      "react-native-reanimated": "<rootDir>/__mocks__/react-native-reanimated.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/__tests__/**",
+      "!src/**/*.test.{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 50,
+        "branches": 40,
+        "functions": 50,
+        "lines": 50
+      }
+    }
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^13.0.0",
+    "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/native": "^6.1.17",
+    "@react-navigation/stack": "^6.3.29",
+    "expo": "^54.0.34",
+    "expo-font": "~11.4.0",
+    "expo-haptics": "~12.4.0",
+    "expo-local-authentication": "~13.4.1",
+    "expo-secure-store": "~12.3.1",
+    "expo-status-bar": "~1.6.0",
+    "react": "18.2.0",
+    "react-native": "0.72.10",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-reanimated": "~3.3.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.9.0",
+    "babel-jest": "^30.5.2",
+    "jest": "^30.5.2",
+    "jest-expo": "^58.0.14"
+  },
+  "private": true
+}

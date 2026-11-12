@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "AppLocker",
+    "slug": "app-locker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0E1120"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.applocker.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Use Face ID to unlock apps faster"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0E1120"
+      },
+      "package": "com.applocker.app",
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "plugins": [
+      "expo-local-authentication"
+    ]
+  }
+}

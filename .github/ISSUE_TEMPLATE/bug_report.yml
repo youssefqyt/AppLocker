@@ -1,0 +1,70 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behaviour
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill in as much detail as possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: "When I tap the lock toggle on Instagram, the app crashes..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behaviour.
+      value: |
+        1. Launch the app
+        2. Navigate to '...'
+        3. Tap '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      placeholder: "The app should lock Instagram and show a lock icon."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behaviour
+      placeholder: "The app crashes with a white screen."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iOS
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App Version
+      placeholder: "v1.0.0"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs / Screenshots
+      description: Paste any error logs or attach screenshots.
